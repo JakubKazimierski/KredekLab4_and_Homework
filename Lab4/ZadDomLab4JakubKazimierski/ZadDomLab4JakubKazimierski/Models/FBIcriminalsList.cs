@@ -11,6 +11,9 @@ namespace ZadDomLab4JakubKazimierski.Models
 {
     class FBIcriminalsList
     {
+        /// <summary>
+        /// Creating columns in table FBIcriminalsList
+        /// </summary>
         [Key]
         public int Id { get; set; }
 
