@@ -33,7 +33,7 @@
             this.UpdateButton = new System.Windows.Forms.Button();
             this.InsertIdLabel = new System.Windows.Forms.Label();
             this.RankTextBox = new System.Windows.Forms.TextBox();
-            this.AgentIdTextBox = new System.Windows.Forms.TextBox();
+            this.CriminalIdTextBox = new System.Windows.Forms.TextBox();
             this.RankUpdateLabel = new System.Windows.Forms.Label();
             this.SurnameTextBox = new System.Windows.Forms.TextBox();
             this.AgentUpdateNameLabel = new System.Windows.Forms.Label();
@@ -73,7 +73,7 @@
             this.UpdateGroupBox.Controls.Add(this.UpdateButton);
             this.UpdateGroupBox.Controls.Add(this.InsertIdLabel);
             this.UpdateGroupBox.Controls.Add(this.RankTextBox);
-            this.UpdateGroupBox.Controls.Add(this.AgentIdTextBox);
+            this.UpdateGroupBox.Controls.Add(this.CriminalIdTextBox);
             this.UpdateGroupBox.Controls.Add(this.RankUpdateLabel);
             this.UpdateGroupBox.Controls.Add(this.SurnameTextBox);
             this.UpdateGroupBox.Controls.Add(this.AgentUpdateNameLabel);
@@ -94,6 +94,7 @@
             this.UpdateButton.TabIndex = 10;
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // InsertIdLabel
             // 
@@ -111,12 +112,12 @@
             this.RankTextBox.Size = new System.Drawing.Size(100, 20);
             this.RankTextBox.TabIndex = 9;
             // 
-            // AgentIdTextBox
+            // CriminalIdTextBox
             // 
-            this.AgentIdTextBox.Location = new System.Drawing.Point(127, 35);
-            this.AgentIdTextBox.Name = "AgentIdTextBox";
-            this.AgentIdTextBox.Size = new System.Drawing.Size(100, 20);
-            this.AgentIdTextBox.TabIndex = 2;
+            this.CriminalIdTextBox.Location = new System.Drawing.Point(127, 35);
+            this.CriminalIdTextBox.Name = "CriminalIdTextBox";
+            this.CriminalIdTextBox.Size = new System.Drawing.Size(100, 20);
+            this.CriminalIdTextBox.TabIndex = 2;
             // 
             // RankUpdateLabel
             // 
@@ -185,6 +186,7 @@
             this.InsertButton.TabIndex = 10;
             this.InsertButton.Text = "Insert";
             this.InsertButton.UseVisualStyleBackColor = true;
+            this.InsertButton.Click += new System.EventHandler(this.InsertButton_Click);
             // 
             // InsertBirthLabel
             // 
@@ -316,7 +318,7 @@
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Label InsertIdLabel;
         private System.Windows.Forms.TextBox RankTextBox;
-        private System.Windows.Forms.TextBox AgentIdTextBox;
+        private System.Windows.Forms.TextBox CriminalIdTextBox;
         private System.Windows.Forms.Label RankUpdateLabel;
         private System.Windows.Forms.TextBox SurnameTextBox;
         private System.Windows.Forms.Label AgentUpdateNameLabel;
