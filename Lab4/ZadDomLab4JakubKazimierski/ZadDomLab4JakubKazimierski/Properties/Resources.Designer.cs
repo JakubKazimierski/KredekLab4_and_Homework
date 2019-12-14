@@ -63,6 +63,16 @@ namespace ZadDomLab4JakubKazimierski.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BADGE {
+            get {
+                object obj = ResourceManager.GetObject("BADGE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LofoFBI2 {
             get {
                 object obj = ResourceManager.GetObject("LofoFBI2", resourceCulture);
