@@ -56,6 +56,11 @@ namespace ZadDomLab4JakubKazimierski
             {
                 MessageBox.Show("Insert All Data");
             }
+
+            InsertNameTextButton.Text = "";
+            InsertSurnameTextBox.Text = "";
+            InsertRankTextBox.Text = "";
+            InsertBirthTextBox.Text = "";
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
@@ -78,6 +83,10 @@ namespace ZadDomLab4JakubKazimierski
             {
                 MessageBox.Show("Insert All Data");
             }
+            CriminalIdTextBox.Text = "";
+            NameTextBox.Text = "";
+            SurnameTextBox.Text = "";
+            RankTextBox.Text = "";
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
@@ -99,6 +108,7 @@ namespace ZadDomLab4JakubKazimierski
             {
                 MessageBox.Show("Insert ID");
             }
+            DeleteIdTextBox.Text = "";
         }
     }
 }
