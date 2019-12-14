@@ -56,6 +56,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgentsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgentsMenu.Designer.cs">
+      <DependentUpon>AgentsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CriminalsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriminalsMenu.Designer.cs">
+      <DependentUpon>CriminalsMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +93,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\FBIgeneric.cs" />
     <Compile Include="Repositories\IFBIgeneric.cs" />
+    <EmbeddedResource Include="AgentsMenu.resx">
+      <DependentUpon>AgentsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CriminalsMenu.resx">
+      <DependentUpon>CriminalsMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>

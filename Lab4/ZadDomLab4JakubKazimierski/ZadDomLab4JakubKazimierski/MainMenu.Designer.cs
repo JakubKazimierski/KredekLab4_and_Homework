@@ -34,39 +34,39 @@
             this.CriminalsButton = new System.Windows.Forms.Button();
             this.UndercoverAgentsButton = new System.Windows.Forms.Button();
             this.ButtonsPanel = new System.Windows.Forms.Panel();
+            this.RightStripeSEVENpictureBox = new System.Windows.Forms.PictureBox();
+            this.RightStripeSIXpictureBox = new System.Windows.Forms.PictureBox();
+            this.RightStripeFIVEpictureBox = new System.Windows.Forms.PictureBox();
+            this.RightStripeFOURpictureBox = new System.Windows.Forms.PictureBox();
+            this.RightStripeTHREEpictureBox = new System.Windows.Forms.PictureBox();
+            this.RightStripeTWOpictureBox = new System.Windows.Forms.PictureBox();
+            this.RightStripeONEpictureBox = new System.Windows.Forms.PictureBox();
+            this.LeftStripeSEVENpictureBox = new System.Windows.Forms.PictureBox();
+            this.LeftStripeSIXpictureBox = new System.Windows.Forms.PictureBox();
+            this.LeftStripeFIVEpictureBox = new System.Windows.Forms.PictureBox();
+            this.LeftStripeFOURpictureBox = new System.Windows.Forms.PictureBox();
+            this.LeftStripeTHREEPictureBox = new System.Windows.Forms.PictureBox();
+            this.LeftStripeTWOpictureBox = new System.Windows.Forms.PictureBox();
+            this.LeftStripeONEpictureBox = new System.Windows.Forms.PictureBox();
             this.RightPictureBox = new System.Windows.Forms.PictureBox();
             this.LeftPictureBox = new System.Windows.Forms.PictureBox();
-            this.LeftStripeONEpictureBox = new System.Windows.Forms.PictureBox();
-            this.LeftStripeTWOpictureBox = new System.Windows.Forms.PictureBox();
-            this.LeftStripeTHREEPictureBox = new System.Windows.Forms.PictureBox();
-            this.LeftStripeFOURpictureBox = new System.Windows.Forms.PictureBox();
-            this.LeftStripeFIVEpictureBox = new System.Windows.Forms.PictureBox();
-            this.LeftStripeSIXpictureBox = new System.Windows.Forms.PictureBox();
-            this.LeftStripeSEVENpictureBox = new System.Windows.Forms.PictureBox();
-            this.RightStripeONEpictureBox = new System.Windows.Forms.PictureBox();
-            this.RightStripeTWOpictureBox = new System.Windows.Forms.PictureBox();
-            this.RightStripeTHREEpictureBox = new System.Windows.Forms.PictureBox();
-            this.RightStripeFOURpictureBox = new System.Windows.Forms.PictureBox();
-            this.RightStripeFIVEpictureBox = new System.Windows.Forms.PictureBox();
-            this.RightStripeSIXpictureBox = new System.Windows.Forms.PictureBox();
-            this.RightStripeSEVENpictureBox = new System.Windows.Forms.PictureBox();
             this.ButtonsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeSEVENpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeSIXpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeFIVEpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeFOURpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeTHREEpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeTWOpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeONEpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeSEVENpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeSIXpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeFIVEpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeFOURpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeTHREEPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeTWOpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeONEpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RightPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LeftPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeONEpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeTWOpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeTHREEPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeFOURpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeFIVEpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeSIXpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeSEVENpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeONEpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeTWOpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeTHREEpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeFOURpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeFIVEpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeSIXpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeSEVENpictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // TitleLabel
@@ -102,6 +102,7 @@
             this.AgentListButton.TabIndex = 3;
             this.AgentListButton.Text = "AGENTS";
             this.AgentListButton.UseVisualStyleBackColor = true;
+            this.AgentListButton.Click += new System.EventHandler(this.AgentListButton_Click);
             // 
             // CriminalsButton
             // 
@@ -114,6 +115,7 @@
             this.CriminalsButton.TabIndex = 4;
             this.CriminalsButton.Text = "CRIMINALS";
             this.CriminalsButton.UseVisualStyleBackColor = true;
+            this.CriminalsButton.Click += new System.EventHandler(this.CriminalsButton_Click);
             // 
             // UndercoverAgentsButton
             // 
@@ -137,6 +139,118 @@
             this.ButtonsPanel.Size = new System.Drawing.Size(717, 396);
             this.ButtonsPanel.TabIndex = 7;
             // 
+            // RightStripeSEVENpictureBox
+            // 
+            this.RightStripeSEVENpictureBox.Location = new System.Drawing.Point(965, 542);
+            this.RightStripeSEVENpictureBox.Name = "RightStripeSEVENpictureBox";
+            this.RightStripeSEVENpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.RightStripeSEVENpictureBox.TabIndex = 23;
+            this.RightStripeSEVENpictureBox.TabStop = false;
+            // 
+            // RightStripeSIXpictureBox
+            // 
+            this.RightStripeSIXpictureBox.Location = new System.Drawing.Point(965, 463);
+            this.RightStripeSIXpictureBox.Name = "RightStripeSIXpictureBox";
+            this.RightStripeSIXpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.RightStripeSIXpictureBox.TabIndex = 22;
+            this.RightStripeSIXpictureBox.TabStop = false;
+            // 
+            // RightStripeFIVEpictureBox
+            // 
+            this.RightStripeFIVEpictureBox.Location = new System.Drawing.Point(965, 388);
+            this.RightStripeFIVEpictureBox.Name = "RightStripeFIVEpictureBox";
+            this.RightStripeFIVEpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.RightStripeFIVEpictureBox.TabIndex = 21;
+            this.RightStripeFIVEpictureBox.TabStop = false;
+            // 
+            // RightStripeFOURpictureBox
+            // 
+            this.RightStripeFOURpictureBox.Location = new System.Drawing.Point(965, 314);
+            this.RightStripeFOURpictureBox.Name = "RightStripeFOURpictureBox";
+            this.RightStripeFOURpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.RightStripeFOURpictureBox.TabIndex = 20;
+            this.RightStripeFOURpictureBox.TabStop = false;
+            // 
+            // RightStripeTHREEpictureBox
+            // 
+            this.RightStripeTHREEpictureBox.Location = new System.Drawing.Point(965, 239);
+            this.RightStripeTHREEpictureBox.Name = "RightStripeTHREEpictureBox";
+            this.RightStripeTHREEpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.RightStripeTHREEpictureBox.TabIndex = 19;
+            this.RightStripeTHREEpictureBox.TabStop = false;
+            // 
+            // RightStripeTWOpictureBox
+            // 
+            this.RightStripeTWOpictureBox.Location = new System.Drawing.Point(965, 162);
+            this.RightStripeTWOpictureBox.Name = "RightStripeTWOpictureBox";
+            this.RightStripeTWOpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.RightStripeTWOpictureBox.TabIndex = 18;
+            this.RightStripeTWOpictureBox.TabStop = false;
+            // 
+            // RightStripeONEpictureBox
+            // 
+            this.RightStripeONEpictureBox.Location = new System.Drawing.Point(965, 88);
+            this.RightStripeONEpictureBox.Name = "RightStripeONEpictureBox";
+            this.RightStripeONEpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.RightStripeONEpictureBox.TabIndex = 17;
+            this.RightStripeONEpictureBox.TabStop = false;
+            // 
+            // LeftStripeSEVENpictureBox
+            // 
+            this.LeftStripeSEVENpictureBox.Location = new System.Drawing.Point(23, 542);
+            this.LeftStripeSEVENpictureBox.Name = "LeftStripeSEVENpictureBox";
+            this.LeftStripeSEVENpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.LeftStripeSEVENpictureBox.TabIndex = 16;
+            this.LeftStripeSEVENpictureBox.TabStop = false;
+            // 
+            // LeftStripeSIXpictureBox
+            // 
+            this.LeftStripeSIXpictureBox.Location = new System.Drawing.Point(23, 463);
+            this.LeftStripeSIXpictureBox.Name = "LeftStripeSIXpictureBox";
+            this.LeftStripeSIXpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.LeftStripeSIXpictureBox.TabIndex = 15;
+            this.LeftStripeSIXpictureBox.TabStop = false;
+            // 
+            // LeftStripeFIVEpictureBox
+            // 
+            this.LeftStripeFIVEpictureBox.Location = new System.Drawing.Point(23, 388);
+            this.LeftStripeFIVEpictureBox.Name = "LeftStripeFIVEpictureBox";
+            this.LeftStripeFIVEpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.LeftStripeFIVEpictureBox.TabIndex = 14;
+            this.LeftStripeFIVEpictureBox.TabStop = false;
+            // 
+            // LeftStripeFOURpictureBox
+            // 
+            this.LeftStripeFOURpictureBox.Location = new System.Drawing.Point(23, 314);
+            this.LeftStripeFOURpictureBox.Name = "LeftStripeFOURpictureBox";
+            this.LeftStripeFOURpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.LeftStripeFOURpictureBox.TabIndex = 13;
+            this.LeftStripeFOURpictureBox.TabStop = false;
+            // 
+            // LeftStripeTHREEPictureBox
+            // 
+            this.LeftStripeTHREEPictureBox.Location = new System.Drawing.Point(23, 239);
+            this.LeftStripeTHREEPictureBox.Name = "LeftStripeTHREEPictureBox";
+            this.LeftStripeTHREEPictureBox.Size = new System.Drawing.Size(210, 42);
+            this.LeftStripeTHREEPictureBox.TabIndex = 12;
+            this.LeftStripeTHREEPictureBox.TabStop = false;
+            // 
+            // LeftStripeTWOpictureBox
+            // 
+            this.LeftStripeTWOpictureBox.Location = new System.Drawing.Point(23, 162);
+            this.LeftStripeTWOpictureBox.Name = "LeftStripeTWOpictureBox";
+            this.LeftStripeTWOpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.LeftStripeTWOpictureBox.TabIndex = 11;
+            this.LeftStripeTWOpictureBox.TabStop = false;
+            // 
+            // LeftStripeONEpictureBox
+            // 
+            this.LeftStripeONEpictureBox.Location = new System.Drawing.Point(23, 88);
+            this.LeftStripeONEpictureBox.Name = "LeftStripeONEpictureBox";
+            this.LeftStripeONEpictureBox.Size = new System.Drawing.Size(210, 42);
+            this.LeftStripeONEpictureBox.TabIndex = 10;
+            this.LeftStripeONEpictureBox.TabStop = false;
+            // 
             // RightPictureBox
             // 
             this.RightPictureBox.BackColor = System.Drawing.Color.DarkGreen;
@@ -154,118 +268,6 @@
             this.LeftPictureBox.Size = new System.Drawing.Size(210, 561);
             this.LeftPictureBox.TabIndex = 8;
             this.LeftPictureBox.TabStop = false;
-            // 
-            // LeftStripeONEpictureBox
-            // 
-            this.LeftStripeONEpictureBox.Location = new System.Drawing.Point(23, 88);
-            this.LeftStripeONEpictureBox.Name = "LeftStripeONEpictureBox";
-            this.LeftStripeONEpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.LeftStripeONEpictureBox.TabIndex = 10;
-            this.LeftStripeONEpictureBox.TabStop = false;
-            // 
-            // LeftStripeTWOpictureBox
-            // 
-            this.LeftStripeTWOpictureBox.Location = new System.Drawing.Point(23, 162);
-            this.LeftStripeTWOpictureBox.Name = "LeftStripeTWOpictureBox";
-            this.LeftStripeTWOpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.LeftStripeTWOpictureBox.TabIndex = 11;
-            this.LeftStripeTWOpictureBox.TabStop = false;
-            // 
-            // LeftStripeTHREEPictureBox
-            // 
-            this.LeftStripeTHREEPictureBox.Location = new System.Drawing.Point(23, 239);
-            this.LeftStripeTHREEPictureBox.Name = "LeftStripeTHREEPictureBox";
-            this.LeftStripeTHREEPictureBox.Size = new System.Drawing.Size(210, 42);
-            this.LeftStripeTHREEPictureBox.TabIndex = 12;
-            this.LeftStripeTHREEPictureBox.TabStop = false;
-            // 
-            // LeftStripeFOURpictureBox
-            // 
-            this.LeftStripeFOURpictureBox.Location = new System.Drawing.Point(23, 314);
-            this.LeftStripeFOURpictureBox.Name = "LeftStripeFOURpictureBox";
-            this.LeftStripeFOURpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.LeftStripeFOURpictureBox.TabIndex = 13;
-            this.LeftStripeFOURpictureBox.TabStop = false;
-            // 
-            // LeftStripeFIVEpictureBox
-            // 
-            this.LeftStripeFIVEpictureBox.Location = new System.Drawing.Point(23, 388);
-            this.LeftStripeFIVEpictureBox.Name = "LeftStripeFIVEpictureBox";
-            this.LeftStripeFIVEpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.LeftStripeFIVEpictureBox.TabIndex = 14;
-            this.LeftStripeFIVEpictureBox.TabStop = false;
-            // 
-            // LeftStripeSIXpictureBox
-            // 
-            this.LeftStripeSIXpictureBox.Location = new System.Drawing.Point(23, 463);
-            this.LeftStripeSIXpictureBox.Name = "LeftStripeSIXpictureBox";
-            this.LeftStripeSIXpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.LeftStripeSIXpictureBox.TabIndex = 15;
-            this.LeftStripeSIXpictureBox.TabStop = false;
-            // 
-            // LeftStripeSEVENpictureBox
-            // 
-            this.LeftStripeSEVENpictureBox.Location = new System.Drawing.Point(23, 542);
-            this.LeftStripeSEVENpictureBox.Name = "LeftStripeSEVENpictureBox";
-            this.LeftStripeSEVENpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.LeftStripeSEVENpictureBox.TabIndex = 16;
-            this.LeftStripeSEVENpictureBox.TabStop = false;
-            // 
-            // RightStripeONEpictureBox
-            // 
-            this.RightStripeONEpictureBox.Location = new System.Drawing.Point(965, 88);
-            this.RightStripeONEpictureBox.Name = "RightStripeONEpictureBox";
-            this.RightStripeONEpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.RightStripeONEpictureBox.TabIndex = 17;
-            this.RightStripeONEpictureBox.TabStop = false;
-            // 
-            // RightStripeTWOpictureBox
-            // 
-            this.RightStripeTWOpictureBox.Location = new System.Drawing.Point(965, 162);
-            this.RightStripeTWOpictureBox.Name = "RightStripeTWOpictureBox";
-            this.RightStripeTWOpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.RightStripeTWOpictureBox.TabIndex = 18;
-            this.RightStripeTWOpictureBox.TabStop = false;
-            // 
-            // RightStripeTHREEpictureBox
-            // 
-            this.RightStripeTHREEpictureBox.Location = new System.Drawing.Point(965, 239);
-            this.RightStripeTHREEpictureBox.Name = "RightStripeTHREEpictureBox";
-            this.RightStripeTHREEpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.RightStripeTHREEpictureBox.TabIndex = 19;
-            this.RightStripeTHREEpictureBox.TabStop = false;
-            // 
-            // RightStripeFOURpictureBox
-            // 
-            this.RightStripeFOURpictureBox.Location = new System.Drawing.Point(965, 314);
-            this.RightStripeFOURpictureBox.Name = "RightStripeFOURpictureBox";
-            this.RightStripeFOURpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.RightStripeFOURpictureBox.TabIndex = 20;
-            this.RightStripeFOURpictureBox.TabStop = false;
-            // 
-            // RightStripeFIVEpictureBox
-            // 
-            this.RightStripeFIVEpictureBox.Location = new System.Drawing.Point(965, 388);
-            this.RightStripeFIVEpictureBox.Name = "RightStripeFIVEpictureBox";
-            this.RightStripeFIVEpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.RightStripeFIVEpictureBox.TabIndex = 21;
-            this.RightStripeFIVEpictureBox.TabStop = false;
-            // 
-            // RightStripeSIXpictureBox
-            // 
-            this.RightStripeSIXpictureBox.Location = new System.Drawing.Point(965, 463);
-            this.RightStripeSIXpictureBox.Name = "RightStripeSIXpictureBox";
-            this.RightStripeSIXpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.RightStripeSIXpictureBox.TabIndex = 22;
-            this.RightStripeSIXpictureBox.TabStop = false;
-            // 
-            // RightStripeSEVENpictureBox
-            // 
-            this.RightStripeSEVENpictureBox.Location = new System.Drawing.Point(965, 542);
-            this.RightStripeSEVENpictureBox.Name = "RightStripeSEVENpictureBox";
-            this.RightStripeSEVENpictureBox.Size = new System.Drawing.Size(210, 42);
-            this.RightStripeSEVENpictureBox.TabIndex = 23;
-            this.RightStripeSEVENpictureBox.TabStop = false;
             // 
             // MainMenu
             // 
@@ -296,22 +298,22 @@
             this.Padding = new System.Windows.Forms.Padding(20);
             this.Text = "FBI";
             this.ButtonsPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeSEVENpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeSIXpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeFIVEpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeFOURpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeTHREEpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeTWOpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightStripeONEpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeSEVENpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeSIXpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeFIVEpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeFOURpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeTHREEPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeTWOpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeONEpictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RightPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LeftPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeONEpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeTWOpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeTHREEPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeFOURpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeFIVEpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeSIXpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftStripeSEVENpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeONEpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeTWOpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeTHREEpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeFOURpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeFIVEpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeSIXpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightStripeSEVENpictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

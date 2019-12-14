@@ -12,9 +12,25 @@ namespace ZadDomLab4JakubKazimierski
 {
     public partial class MainMenu : Form
     {
+
+        AgentsMenu agentsMenu;
+        CriminalsMenu criminalsMenu;
+
         public MainMenu()
         {
             InitializeComponent();
+        }
+
+        private void AgentListButton_Click(object sender, EventArgs e)
+        {
+            agentsMenu = new AgentsMenu();
+            agentsMenu.Show();
+        }
+
+        private void CriminalsButton_Click(object sender, EventArgs e)
+        {
+            criminalsMenu = new CriminalsMenu();
+            criminalsMenu.Show();
         }
     }
 }
