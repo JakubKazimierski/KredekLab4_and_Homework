@@ -128,6 +128,7 @@
             this.UndercoverAgentsButton.TabIndex = 5;
             this.UndercoverAgentsButton.Text = "UNDERCOVER AGENTS";
             this.UndercoverAgentsButton.UseVisualStyleBackColor = true;
+            this.UndercoverAgentsButton.Click += new System.EventHandler(this.UndercoverAgentsButton_Click);
             // 
             // ButtonsPanel
             // 

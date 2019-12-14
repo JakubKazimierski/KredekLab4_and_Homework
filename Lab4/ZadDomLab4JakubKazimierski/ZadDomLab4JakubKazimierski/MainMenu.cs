@@ -15,6 +15,7 @@ namespace ZadDomLab4JakubKazimierski
 
         AgentsMenu agentsMenu;
         CriminalsMenu criminalsMenu;
+        UndercoverAgentsMenu undercoverAgentsMenu;
 
         public MainMenu()
         {
@@ -31,6 +32,13 @@ namespace ZadDomLab4JakubKazimierski
         {
             criminalsMenu = new CriminalsMenu();
             criminalsMenu.Show();
+        }
+
+        private void UndercoverAgentsButton_Click(object sender, EventArgs e)
+        {
+            undercoverAgentsMenu = new UndercoverAgentsMenu();
+            undercoverAgentsMenu.Show();
+
         }
     }
 }
