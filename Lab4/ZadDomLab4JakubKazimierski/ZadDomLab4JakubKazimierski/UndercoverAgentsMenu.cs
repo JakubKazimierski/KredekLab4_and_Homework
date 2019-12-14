@@ -94,11 +94,7 @@ namespace ZadDomLab4JakubKazimierski
                 var agentId = Int32.Parse(AgentIdTextBox.Text);
                 var updateAgent = _agentsUndercover.GetById(agentId);
 
-                var updateCriminal = _criminalsUndercover.GetById(updateAgent.AgentCriminalId);
-
-                updateCriminal.FirstName = NameTextBox.Text;
-                updateCriminal.LastName = SurnameTextBox.Text;
-
+               
 
                 updateAgent.FirstName = NameTextBox.Text;
                 updateAgent.LastName = SurnameTextBox.Text;
@@ -107,8 +103,7 @@ namespace ZadDomLab4JakubKazimierski
                 _agentsUndercover.Update(updateAgent);
                 _agentsUndercover.Save();
 
-                _criminalsUndercover.Update(updateCriminal);
-                _criminalsUndercover.Save();
+
 
                 LoadAgents();
                 LoadCriminals();
