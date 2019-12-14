@@ -24,6 +24,7 @@ namespace ZadDomLab4JakubKazimierski.Models
         public virtual DbSet<FBIcriminalsList> Criminals { get; set; }
         public virtual DbSet<FBIagentsType> AgentsTypes { get; set; }
         public virtual DbSet<FBIcriminalsType> CriminalsTypes { get; set; }
+        public virtual DbSet<FBIagentsUndercover> AgentsUndercover { get; set; }
 
 
     }

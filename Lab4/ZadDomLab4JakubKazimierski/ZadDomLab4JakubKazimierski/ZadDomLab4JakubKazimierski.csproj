@@ -66,6 +66,10 @@
     <Compile Include="Migrations\201912140638511_InitialMigration.designer.cs">
       <DependentUpon>201912140638511_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912140643490_InitialMigration1.cs" />
+    <Compile Include="Migrations\201912140643490_InitialMigration1.designer.cs">
+      <DependentUpon>201912140643490_InitialMigration1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\FBIagentsList.cs" />
     <Compile Include="Models\FBIagentsType.cs" />
@@ -79,6 +83,9 @@
     <Compile Include="Repositories\IFBIgeneric.cs" />
     <EmbeddedResource Include="Migrations\201912140638511_InitialMigration.resx">
       <DependentUpon>201912140638511_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912140643490_InitialMigration1.resx">
+      <DependentUpon>201912140643490_InitialMigration1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
