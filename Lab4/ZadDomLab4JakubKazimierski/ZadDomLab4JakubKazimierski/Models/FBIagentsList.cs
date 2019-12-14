@@ -20,7 +20,7 @@ namespace ZadDomLab4JakubKazimierski.Models
         [DisplayName("Imię")]
         public string FirstName { get; set; }
 
-        [Required(ErrorMessage = "Pole nazisko jest wymagane")]
+        [Required(ErrorMessage = "Pole nazwisko jest wymagane")]
         [DisplayName("Nazwisko")]
         public string LastName { get; set; }
 
@@ -30,6 +30,6 @@ namespace ZadDomLab4JakubKazimierski.Models
         public int AgentTypeId { get; set; }
 
         [ForeignKey("AgentTypeId")]
-        public virtual FBIagentsType FBIAgentType { get; set; }
+        public virtual FBIagentsType FBIagentType { get; set; }
     }
 }
