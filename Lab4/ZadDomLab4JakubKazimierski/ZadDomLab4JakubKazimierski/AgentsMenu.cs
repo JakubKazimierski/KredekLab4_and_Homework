@@ -51,5 +51,27 @@ namespace ZadDomLab4JakubKazimierski
 
             LoadAgents();
         }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            if (AgentIdTextBox.Text != "" && NameTextBox.Text != "" && SurnameTextBox.Text != "" && RankTextBox.Text != "")
+            {
+                var agentId = Int32.Parse(AgentIdTextBox.Text);
+                var updateAgent = _agents.GetById(agentId);
+
+                updateAgent.FirstName = NameTextBox.Text;
+                updateAgent.LastName = SurnameTextBox.Text;
+                updateAgent.AgentTypeId = Int32.Parse(RankTextBox.Text);
+
+                _agents.Update(updateAgent);
+                _agents.Save();
+
+                LoadAgents();
+            }
+            else
+            {
+                MessageBox.Show("Insert All Data");
+            }
+        }
     }
 }
