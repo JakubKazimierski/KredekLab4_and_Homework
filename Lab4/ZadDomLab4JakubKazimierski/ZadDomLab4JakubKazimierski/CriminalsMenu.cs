@@ -79,5 +79,26 @@ namespace ZadDomLab4JakubKazimierski
                 MessageBox.Show("Insert All Data");
             }
         }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            if (DeleteIdTextBox.Text != "")
+            {
+                var selectedCriminalIndex = Int32.Parse(DeleteIdTextBox.Text);
+                var deleteCriminal = _criminals.GetById(selectedCriminalIndex);
+
+
+                _criminals.DeleteById(deleteCriminal.Id);
+                _criminals.Save();
+
+
+
+                LoadCriminals();
+            }
+            else
+            {
+                MessageBox.Show("Insert ID");
+            }
+        }
     }
 }
