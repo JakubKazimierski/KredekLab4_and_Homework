@@ -96,13 +96,20 @@ namespace ZadDomLab4JakubKazimierski
                 var selectedCriminalIndex = Int32.Parse(DeleteIdTextBox.Text);
                 var deleteCriminal = _criminals.GetById(selectedCriminalIndex);
 
+                if (deleteCriminal != null)
+                {
 
-                _criminals.DeleteById(deleteCriminal.Id);
-                _criminals.Save();
+                    _criminals.DeleteById(deleteCriminal.Id);
+                    _criminals.Save();
 
 
 
-                LoadCriminals();
+                    LoadCriminals();
+                }
+                else
+                {
+                    MessageBox.Show("Insert proper ID");
+                }
             }
             else
             {

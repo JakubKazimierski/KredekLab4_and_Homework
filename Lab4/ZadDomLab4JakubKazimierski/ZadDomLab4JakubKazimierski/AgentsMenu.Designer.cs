@@ -88,6 +88,7 @@
             this.AgentsDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.AgentsDataGridView.Location = new System.Drawing.Point(12, 12);
             this.AgentsDataGridView.Name = "AgentsDataGridView";
+            this.AgentsDataGridView.ReadOnly = true;
             this.AgentsDataGridView.RowHeadersWidth = 46;
             this.AgentsDataGridView.Size = new System.Drawing.Size(697, 602);
             this.AgentsDataGridView.TabIndex = 0;

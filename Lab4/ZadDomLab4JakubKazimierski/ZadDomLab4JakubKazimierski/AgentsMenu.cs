@@ -100,13 +100,20 @@ namespace ZadDomLab4JakubKazimierski
                 var selectedAgentIndex = Int32.Parse(DeleteIdTextBox.Text);
                 var deleteAgent = _agents.GetById(selectedAgentIndex);
 
+                if (deleteAgent != null)
+                {
+                    _agents.DeleteById(deleteAgent.Id);
+                    _agents.Save();
 
-                _agents.DeleteById(deleteAgent.Id);
-                _agents.Save();
 
 
 
-                LoadAgents();
+                    LoadAgents();
+                }
+                else
+                {
+                    MessageBox.Show("Insert proper ID");
+                }
             }
             else
             {

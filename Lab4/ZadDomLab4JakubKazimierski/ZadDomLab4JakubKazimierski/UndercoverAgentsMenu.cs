@@ -127,15 +127,23 @@ namespace ZadDomLab4JakubKazimierski
                 var deleteAgent = _agentsUndercover.GetById(selectedAgentIndex);
 
 
-                var deleteCriminal = _criminalsUndercover.GetById(deleteAgent.AgentCriminalId);
-
-                _criminalsUndercover.DeleteById(deleteCriminal.Id);
-                _criminalsUndercover.Save();
-
+                if (deleteAgent != null)
+                {
+                    var deleteCriminal = _criminalsUndercover.GetById(deleteAgent.AgentCriminalId);
 
 
-                LoadAgents();
-                LoadCriminals();
+                    _criminalsUndercover.DeleteById(deleteCriminal.Id);
+                    _criminalsUndercover.Save();
+
+
+
+                    LoadAgents();
+                    LoadCriminals();
+                }
+                else
+                {
+                    MessageBox.Show("Insert proper ID");
+                }
             }
             else
             {

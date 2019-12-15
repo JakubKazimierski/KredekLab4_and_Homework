@@ -88,6 +88,7 @@
             this.CriminalsGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CriminalsGridView.Location = new System.Drawing.Point(12, 12);
             this.CriminalsGridView.Name = "CriminalsGridView";
+            this.CriminalsGridView.ReadOnly = true;
             this.CriminalsGridView.RowHeadersWidth = 46;
             this.CriminalsGridView.Size = new System.Drawing.Size(698, 602);
             this.CriminalsGridView.TabIndex = 0;
