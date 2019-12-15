@@ -45,26 +45,34 @@ namespace ZadDomLab4JakubKazimierski
             //assertion of text boxes
             if (InsertNameTextButton.Text != "" && InsertSurnameTextBox.Text != "" && InsertRankTextBox.Text != "" && InsertBirthTextBox.Text != "")
             {
-                //variables needed to insert new criminal 
-                var criminalFirstName = InsertNameTextButton.Text;
-                var criminalLastName = InsertSurnameTextBox.Text;
-                var criminalBirthdate = InsertBirthTextBox.Text;
-                var TypeId = InsertRankTextBox.Text;
-
-                //new object
-                FBIcriminalsList newCriminal = new FBIcriminalsList()
+                if (Int32.Parse(RankTextBox.Text) <= 3)
                 {
-                    FirstName = criminalFirstName,
-                    LastName = criminalLastName,
-                    Birthdate = Convert.ToDateTime(criminalBirthdate),
-                    CriminalTypeId = Int32.Parse(TypeId)
-                };
+                    //variables needed to insert new criminal 
+                    var criminalFirstName = InsertNameTextButton.Text;
+                    var criminalLastName = InsertSurnameTextBox.Text;
+                    var criminalBirthdate = InsertBirthTextBox.Text;
+                    var TypeId = InsertRankTextBox.Text;
+              
 
-                //add new element to data base
-                _criminals.Create(newCriminal);
-                _criminals.Save();
+                    //new object
+                    FBIcriminalsList newCriminal = new FBIcriminalsList()
+                    {
+                        FirstName = criminalFirstName,
+                        LastName = criminalLastName,
+                        Birthdate = Convert.ToDateTime(criminalBirthdate),
+                        CriminalTypeId = Int32.Parse(TypeId)
+                    };
 
-                LoadCriminals();
+                    //add new element to data base
+                    _criminals.Create(newCriminal);
+                    _criminals.Save();
+
+                    LoadCriminals();
+                }
+                else
+                {
+                    MessageBox.Show("Insert proper Rank");
+                }
             }
             else
             {
@@ -86,7 +94,7 @@ namespace ZadDomLab4JakubKazimierski
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             //assertion of text boxes
-            if (CriminalIdTextBox.Text != "" && NameTextBox.Text != "" && SurnameTextBox.Text != "" && RankTextBox.Text != "")
+            if (CriminalIdTextBox.Text != "" && NameTextBox.Text != "" && SurnameTextBox.Text != "" && RankTextBox.Text != "" )
             {
                 //variables needed to update criminal
                 var criminalId = Int32.Parse(CriminalIdTextBox.Text);
@@ -95,15 +103,22 @@ namespace ZadDomLab4JakubKazimierski
                 //assertion of non existing key
                 if (updateCriminal != null)
                 {
-                    updateCriminal.FirstName = NameTextBox.Text;
-                    updateCriminal.LastName = SurnameTextBox.Text;
-                    updateCriminal.CriminalTypeId = Int32.Parse(RankTextBox.Text);
+                    if (Int32.Parse(RankTextBox.Text) <= 3)
+                    {
+                        updateCriminal.FirstName = NameTextBox.Text;
+                        updateCriminal.LastName = SurnameTextBox.Text;
+                        updateCriminal.CriminalTypeId = Int32.Parse(RankTextBox.Text);
 
-                    //add criminal to data base
-                    _criminals.Update(updateCriminal);
-                    _criminals.Save();
+                        //add criminal to data base
+                        _criminals.Update(updateCriminal);
+                        _criminals.Save();
 
-                    LoadCriminals();
+                        LoadCriminals();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Insert proper Rank");
+                    }
                 }
                 else
                 {

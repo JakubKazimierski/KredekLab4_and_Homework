@@ -50,26 +50,33 @@ namespace ZadDomLab4JakubKazimierski
             //assertion of text boxes
             if (InsertNameTextButton.Text != "" && InsertSurnameTextBox.Text != "" && InsertRankTextBox.Text != "" && InsertBirthTextBox.Text != "")
             {
-                //variables of agent attributes
-                var agentFirstName = InsertNameTextButton.Text;
-                var agentLastName = InsertSurnameTextBox.Text;
-                var agentBirthdate = InsertBirthTextBox.Text;
-                var TypeId = InsertRankTextBox.Text;
-
-                //new object
-                FBIagentsList newAgent = new FBIagentsList()
+                if (Int32.Parse(RankTextBox.Text) <= 3)
                 {
-                    FirstName = agentFirstName,
-                    LastName = agentLastName,
-                    Birthdate = Convert.ToDateTime(agentBirthdate),
-                    AgentTypeId = Int32.Parse(TypeId)
-                };
+                    //variables of agent attributes
+                    var agentFirstName = InsertNameTextButton.Text;
+                    var agentLastName = InsertSurnameTextBox.Text;
+                    var agentBirthdate = InsertBirthTextBox.Text;
+                    var TypeId = InsertRankTextBox.Text;
 
-                //insert new agent to data base
-                _agents.Create(newAgent);
-                _agents.Save();
+                    //new object
+                    FBIagentsList newAgent = new FBIagentsList()
+                    {
+                        FirstName = agentFirstName,
+                        LastName = agentLastName,
+                        Birthdate = Convert.ToDateTime(agentBirthdate),
+                        AgentTypeId = Int32.Parse(TypeId)
+                    };
 
-                LoadAgents();
+                    //insert new agent to data base
+                    _agents.Create(newAgent);
+                    _agents.Save();
+
+                    LoadAgents();
+                }
+                else
+                {
+                    MessageBox.Show("Insert proper Rank");
+                }
             }
             else
             {
@@ -100,15 +107,21 @@ namespace ZadDomLab4JakubKazimierski
 
                 if (updateAgent != null)
                 {
+                    if (Int32.Parse(RankTextBox.Text) <= 3)
+                    {
+                        updateAgent.FirstName = NameTextBox.Text;
+                        updateAgent.LastName = SurnameTextBox.Text;
+                        updateAgent.AgentTypeId = Int32.Parse(RankTextBox.Text);
 
-                    updateAgent.FirstName = NameTextBox.Text;
-                    updateAgent.LastName = SurnameTextBox.Text;
-                    updateAgent.AgentTypeId = Int32.Parse(RankTextBox.Text);
+                        _agents.Update(updateAgent);
+                        _agents.Save();
 
-                    _agents.Update(updateAgent);
-                    _agents.Save();
-
-                    LoadAgents();
+                        LoadAgents();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Insert proper Rank");
+                    }
                 }
                 else
                 {
