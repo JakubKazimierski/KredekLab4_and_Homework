@@ -63,8 +63,10 @@
             // 
             // AgentsDataGridView
             // 
+            this.AgentsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.AgentsDataGridView.BackgroundColor = System.Drawing.Color.DarkGreen;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.AgentsDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.AgentsDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.728972F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -87,12 +89,12 @@
             this.AgentsDataGridView.Location = new System.Drawing.Point(12, 12);
             this.AgentsDataGridView.Name = "AgentsDataGridView";
             this.AgentsDataGridView.RowHeadersWidth = 46;
-            this.AgentsDataGridView.Size = new System.Drawing.Size(364, 602);
+            this.AgentsDataGridView.Size = new System.Drawing.Size(697, 602);
             this.AgentsDataGridView.TabIndex = 0;
             // 
             // InsertIdLabel
             // 
-            this.InsertIdLabel.Location = new System.Drawing.Point(6, 33);
+            this.InsertIdLabel.Location = new System.Drawing.Point(6, 34);
             this.InsertIdLabel.Name = "InsertIdLabel";
             this.InsertIdLabel.Size = new System.Drawing.Size(100, 23);
             this.InsertIdLabel.TabIndex = 1;
@@ -167,7 +169,7 @@
             this.UpdateGroupBox.Controls.Add(this.SurnameUpdateLabel);
             this.UpdateGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.747663F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.UpdateGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
-            this.UpdateGroupBox.Location = new System.Drawing.Point(382, 12);
+            this.UpdateGroupBox.Location = new System.Drawing.Point(715, 12);
             this.UpdateGroupBox.Name = "UpdateGroupBox";
             this.UpdateGroupBox.Size = new System.Drawing.Size(258, 247);
             this.UpdateGroupBox.TabIndex = 10;
@@ -197,7 +199,7 @@
             this.InsertGroupBox.Controls.Add(this.InsertSurnameLabel);
             this.InsertGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.747663F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.InsertGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
-            this.InsertGroupBox.Location = new System.Drawing.Point(382, 265);
+            this.InsertGroupBox.Location = new System.Drawing.Point(715, 265);
             this.InsertGroupBox.Name = "InsertGroupBox";
             this.InsertGroupBox.Size = new System.Drawing.Size(258, 247);
             this.InsertGroupBox.TabIndex = 11;
@@ -285,7 +287,7 @@
             this.DeleteGroupBox.Controls.Add(this.DeleteIDLabel);
             this.DeleteGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.747663F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.DeleteGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
-            this.DeleteGroupBox.Location = new System.Drawing.Point(382, 518);
+            this.DeleteGroupBox.Location = new System.Drawing.Point(715, 518);
             this.DeleteGroupBox.Name = "DeleteGroupBox";
             this.DeleteGroupBox.Size = new System.Drawing.Size(258, 96);
             this.DeleteGroupBox.TabIndex = 12;
@@ -323,7 +325,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(655, 626);
+            this.ClientSize = new System.Drawing.Size(985, 626);
             this.Controls.Add(this.DeleteGroupBox);
             this.Controls.Add(this.InsertGroupBox);
             this.Controls.Add(this.UpdateGroupBox);

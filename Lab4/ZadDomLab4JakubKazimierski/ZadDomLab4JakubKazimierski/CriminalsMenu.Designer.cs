@@ -63,7 +63,9 @@
             // 
             // CriminalsGridView
             // 
+            this.CriminalsGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.CriminalsGridView.BackgroundColor = System.Drawing.Color.DarkGreen;
+            this.CriminalsGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.728972F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -87,7 +89,7 @@
             this.CriminalsGridView.Location = new System.Drawing.Point(12, 12);
             this.CriminalsGridView.Name = "CriminalsGridView";
             this.CriminalsGridView.RowHeadersWidth = 46;
-            this.CriminalsGridView.Size = new System.Drawing.Size(329, 602);
+            this.CriminalsGridView.Size = new System.Drawing.Size(698, 602);
             this.CriminalsGridView.TabIndex = 0;
             // 
             // UpdateGroupBox
@@ -103,7 +105,7 @@
             this.UpdateGroupBox.Controls.Add(this.SurnameUpdateLabel);
             this.UpdateGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.747663F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.UpdateGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
-            this.UpdateGroupBox.Location = new System.Drawing.Point(347, 12);
+            this.UpdateGroupBox.Location = new System.Drawing.Point(716, 12);
             this.UpdateGroupBox.Name = "UpdateGroupBox";
             this.UpdateGroupBox.Size = new System.Drawing.Size(258, 247);
             this.UpdateGroupBox.TabIndex = 11;
@@ -197,7 +199,7 @@
             this.InsertGroupBox.Controls.Add(this.InsertSurnameLabel);
             this.InsertGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.747663F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.InsertGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
-            this.InsertGroupBox.Location = new System.Drawing.Point(347, 265);
+            this.InsertGroupBox.Location = new System.Drawing.Point(716, 265);
             this.InsertGroupBox.Name = "InsertGroupBox";
             this.InsertGroupBox.Size = new System.Drawing.Size(258, 247);
             this.InsertGroupBox.TabIndex = 12;
@@ -285,7 +287,7 @@
             this.DeleteGroupBox.Controls.Add(this.DeleteIDLabel);
             this.DeleteGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.747663F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.DeleteGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
-            this.DeleteGroupBox.Location = new System.Drawing.Point(347, 518);
+            this.DeleteGroupBox.Location = new System.Drawing.Point(716, 518);
             this.DeleteGroupBox.Name = "DeleteGroupBox";
             this.DeleteGroupBox.Size = new System.Drawing.Size(258, 96);
             this.DeleteGroupBox.TabIndex = 13;
@@ -323,7 +325,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(628, 622);
+            this.ClientSize = new System.Drawing.Size(986, 622);
             this.Controls.Add(this.DeleteGroupBox);
             this.Controls.Add(this.InsertGroupBox);
             this.Controls.Add(this.UpdateGroupBox);
