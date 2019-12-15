@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.AgentsDataGridView = new System.Windows.Forms.DataGridView();
             this.InsertIdLabel = new System.Windows.Forms.Label();
             this.AgentIdTextBox = new System.Windows.Forms.TextBox();
@@ -50,9 +52,9 @@
             this.InsertNameTextButton = new System.Windows.Forms.TextBox();
             this.InsertSurnameLabel = new System.Windows.Forms.Label();
             this.DeleteGroupBox = new System.Windows.Forms.GroupBox();
-            this.DeleteIDLabel = new System.Windows.Forms.Label();
-            this.DeleteIdTextBox = new System.Windows.Forms.TextBox();
             this.DeleteButton = new System.Windows.Forms.Button();
+            this.DeleteIdTextBox = new System.Windows.Forms.TextBox();
+            this.DeleteIDLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.AgentsDataGridView)).BeginInit();
             this.UpdateGroupBox.SuspendLayout();
             this.InsertGroupBox.SuspendLayout();
@@ -61,7 +63,27 @@
             // 
             // AgentsDataGridView
             // 
+            this.AgentsDataGridView.BackgroundColor = System.Drawing.Color.DarkGreen;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.728972F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AgentsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.AgentsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.728972F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AgentsDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.AgentsDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.AgentsDataGridView.Location = new System.Drawing.Point(12, 12);
             this.AgentsDataGridView.Name = "AgentsDataGridView";
             this.AgentsDataGridView.RowHeadersWidth = 46;
@@ -81,7 +103,7 @@
             // 
             this.AgentIdTextBox.Location = new System.Drawing.Point(127, 35);
             this.AgentIdTextBox.Name = "AgentIdTextBox";
-            this.AgentIdTextBox.Size = new System.Drawing.Size(100, 20);
+            this.AgentIdTextBox.Size = new System.Drawing.Size(100, 22);
             this.AgentIdTextBox.TabIndex = 2;
             // 
             // AgentUpdateNameLabel
@@ -115,21 +137,21 @@
             // 
             this.NameTextBox.Location = new System.Drawing.Point(127, 78);
             this.NameTextBox.Name = "NameTextBox";
-            this.NameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NameTextBox.Size = new System.Drawing.Size(100, 22);
             this.NameTextBox.TabIndex = 7;
             // 
             // SurnameTextBox
             // 
             this.SurnameTextBox.Location = new System.Drawing.Point(127, 122);
             this.SurnameTextBox.Name = "SurnameTextBox";
-            this.SurnameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SurnameTextBox.Size = new System.Drawing.Size(100, 22);
             this.SurnameTextBox.TabIndex = 8;
             // 
             // RankTextBox
             // 
             this.RankTextBox.Location = new System.Drawing.Point(127, 169);
             this.RankTextBox.Name = "RankTextBox";
-            this.RankTextBox.Size = new System.Drawing.Size(100, 20);
+            this.RankTextBox.Size = new System.Drawing.Size(100, 22);
             this.RankTextBox.TabIndex = 9;
             // 
             // UpdateGroupBox
@@ -143,6 +165,8 @@
             this.UpdateGroupBox.Controls.Add(this.AgentUpdateNameLabel);
             this.UpdateGroupBox.Controls.Add(this.NameTextBox);
             this.UpdateGroupBox.Controls.Add(this.SurnameUpdateLabel);
+            this.UpdateGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.747663F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.UpdateGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
             this.UpdateGroupBox.Location = new System.Drawing.Point(382, 12);
             this.UpdateGroupBox.Name = "UpdateGroupBox";
             this.UpdateGroupBox.Size = new System.Drawing.Size(258, 247);
@@ -171,6 +195,8 @@
             this.InsertGroupBox.Controls.Add(this.InsertNameLabel);
             this.InsertGroupBox.Controls.Add(this.InsertNameTextButton);
             this.InsertGroupBox.Controls.Add(this.InsertSurnameLabel);
+            this.InsertGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.747663F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.InsertGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
             this.InsertGroupBox.Location = new System.Drawing.Point(382, 265);
             this.InsertGroupBox.Name = "InsertGroupBox";
             this.InsertGroupBox.Size = new System.Drawing.Size(258, 247);
@@ -190,9 +216,9 @@
             // 
             // InsertBirthLabel
             // 
-            this.InsertBirthLabel.Location = new System.Drawing.Point(6, 28);
+            this.InsertBirthLabel.Location = new System.Drawing.Point(6, 18);
             this.InsertBirthLabel.Name = "InsertBirthLabel";
-            this.InsertBirthLabel.Size = new System.Drawing.Size(100, 33);
+            this.InsertBirthLabel.Size = new System.Drawing.Size(115, 47);
             this.InsertBirthLabel.TabIndex = 1;
             this.InsertBirthLabel.Text = "Birth (YYYY-MM-DD)";
             this.InsertBirthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -201,14 +227,14 @@
             // 
             this.InsertRankTextBox.Location = new System.Drawing.Point(127, 169);
             this.InsertRankTextBox.Name = "InsertRankTextBox";
-            this.InsertRankTextBox.Size = new System.Drawing.Size(100, 20);
+            this.InsertRankTextBox.Size = new System.Drawing.Size(100, 22);
             this.InsertRankTextBox.TabIndex = 9;
             // 
             // InsertBirthTextBox
             // 
             this.InsertBirthTextBox.Location = new System.Drawing.Point(127, 35);
             this.InsertBirthTextBox.Name = "InsertBirthTextBox";
-            this.InsertBirthTextBox.Size = new System.Drawing.Size(100, 20);
+            this.InsertBirthTextBox.Size = new System.Drawing.Size(100, 22);
             this.InsertBirthTextBox.TabIndex = 2;
             // 
             // InsertRankLabel
@@ -224,7 +250,7 @@
             // 
             this.InsertSurnameTextBox.Location = new System.Drawing.Point(127, 122);
             this.InsertSurnameTextBox.Name = "InsertSurnameTextBox";
-            this.InsertSurnameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.InsertSurnameTextBox.Size = new System.Drawing.Size(100, 22);
             this.InsertSurnameTextBox.TabIndex = 8;
             // 
             // InsertNameLabel
@@ -240,7 +266,7 @@
             // 
             this.InsertNameTextButton.Location = new System.Drawing.Point(127, 78);
             this.InsertNameTextButton.Name = "InsertNameTextButton";
-            this.InsertNameTextButton.Size = new System.Drawing.Size(100, 20);
+            this.InsertNameTextButton.Size = new System.Drawing.Size(100, 22);
             this.InsertNameTextButton.TabIndex = 7;
             // 
             // InsertSurnameLabel
@@ -257,28 +283,14 @@
             this.DeleteGroupBox.Controls.Add(this.DeleteButton);
             this.DeleteGroupBox.Controls.Add(this.DeleteIdTextBox);
             this.DeleteGroupBox.Controls.Add(this.DeleteIDLabel);
+            this.DeleteGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.747663F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DeleteGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
             this.DeleteGroupBox.Location = new System.Drawing.Point(382, 518);
             this.DeleteGroupBox.Name = "DeleteGroupBox";
             this.DeleteGroupBox.Size = new System.Drawing.Size(258, 96);
             this.DeleteGroupBox.TabIndex = 12;
             this.DeleteGroupBox.TabStop = false;
             this.DeleteGroupBox.Text = "Delete";
-            // 
-            // DeleteIDLabel
-            // 
-            this.DeleteIDLabel.Location = new System.Drawing.Point(6, 30);
-            this.DeleteIDLabel.Name = "DeleteIDLabel";
-            this.DeleteIDLabel.Size = new System.Drawing.Size(100, 23);
-            this.DeleteIDLabel.TabIndex = 11;
-            this.DeleteIDLabel.Text = "Insert Agent\'s ID ";
-            this.DeleteIDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DeleteIdTextBox
-            // 
-            this.DeleteIdTextBox.Location = new System.Drawing.Point(127, 30);
-            this.DeleteIdTextBox.Name = "DeleteIdTextBox";
-            this.DeleteIdTextBox.Size = new System.Drawing.Size(100, 20);
-            this.DeleteIdTextBox.TabIndex = 11;
             // 
             // DeleteButton
             // 
@@ -290,10 +302,27 @@
             this.DeleteButton.UseVisualStyleBackColor = true;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
+            // DeleteIdTextBox
+            // 
+            this.DeleteIdTextBox.Location = new System.Drawing.Point(127, 30);
+            this.DeleteIdTextBox.Name = "DeleteIdTextBox";
+            this.DeleteIdTextBox.Size = new System.Drawing.Size(100, 22);
+            this.DeleteIdTextBox.TabIndex = 11;
+            // 
+            // DeleteIDLabel
+            // 
+            this.DeleteIDLabel.Location = new System.Drawing.Point(6, 30);
+            this.DeleteIDLabel.Name = "DeleteIDLabel";
+            this.DeleteIDLabel.Size = new System.Drawing.Size(100, 23);
+            this.DeleteIDLabel.TabIndex = 11;
+            this.DeleteIDLabel.Text = "Insert Agent\'s ID ";
+            this.DeleteIDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // AgentsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(655, 626);
             this.Controls.Add(this.DeleteGroupBox);
             this.Controls.Add(this.InsertGroupBox);

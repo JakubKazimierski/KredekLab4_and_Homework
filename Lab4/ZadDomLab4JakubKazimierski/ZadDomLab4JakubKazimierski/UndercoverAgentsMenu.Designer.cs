@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.UndercoverAgentsDataGridView = new System.Windows.Forms.DataGridView();
             this.UpdateGroupBox = new System.Windows.Forms.GroupBox();
             this.UpdateButton = new System.Windows.Forms.Button();
@@ -59,15 +63,36 @@
             // 
             // UndercoverAgentsDataGridView
             // 
+            this.UndercoverAgentsDataGridView.BackgroundColor = System.Drawing.Color.DarkGreen;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.728972F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.UndercoverAgentsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.UndercoverAgentsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UndercoverAgentsDataGridView.Location = new System.Drawing.Point(12, 7);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.728972F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.UndercoverAgentsDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.UndercoverAgentsDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.UndercoverAgentsDataGridView.Location = new System.Drawing.Point(12, 12);
             this.UndercoverAgentsDataGridView.Name = "UndercoverAgentsDataGridView";
             this.UndercoverAgentsDataGridView.RowHeadersWidth = 46;
-            this.UndercoverAgentsDataGridView.Size = new System.Drawing.Size(364, 607);
+            this.UndercoverAgentsDataGridView.Size = new System.Drawing.Size(364, 602);
             this.UndercoverAgentsDataGridView.TabIndex = 1;
             // 
             // UpdateGroupBox
             // 
+            this.UpdateGroupBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.UpdateGroupBox.Controls.Add(this.UpdateButton);
             this.UpdateGroupBox.Controls.Add(this.InsertIdLabel);
             this.UpdateGroupBox.Controls.Add(this.AgentIdTextBox);
@@ -75,6 +100,8 @@
             this.UpdateGroupBox.Controls.Add(this.AgentUpdateNameLabel);
             this.UpdateGroupBox.Controls.Add(this.NameTextBox);
             this.UpdateGroupBox.Controls.Add(this.SurnameUpdateLabel);
+            this.UpdateGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.747663F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.UpdateGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
             this.UpdateGroupBox.Location = new System.Drawing.Point(382, 12);
             this.UpdateGroupBox.Name = "UpdateGroupBox";
             this.UpdateGroupBox.Size = new System.Drawing.Size(258, 247);
@@ -105,14 +132,14 @@
             // 
             this.AgentIdTextBox.Location = new System.Drawing.Point(127, 35);
             this.AgentIdTextBox.Name = "AgentIdTextBox";
-            this.AgentIdTextBox.Size = new System.Drawing.Size(100, 20);
+            this.AgentIdTextBox.Size = new System.Drawing.Size(100, 22);
             this.AgentIdTextBox.TabIndex = 2;
             // 
             // SurnameTextBox
             // 
             this.SurnameTextBox.Location = new System.Drawing.Point(127, 159);
             this.SurnameTextBox.Name = "SurnameTextBox";
-            this.SurnameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SurnameTextBox.Size = new System.Drawing.Size(100, 22);
             this.SurnameTextBox.TabIndex = 8;
             // 
             // AgentUpdateNameLabel
@@ -128,7 +155,7 @@
             // 
             this.NameTextBox.Location = new System.Drawing.Point(127, 100);
             this.NameTextBox.Name = "NameTextBox";
-            this.NameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NameTextBox.Size = new System.Drawing.Size(100, 22);
             this.NameTextBox.TabIndex = 7;
             // 
             // SurnameUpdateLabel
@@ -149,6 +176,8 @@
             this.InsertGroupBox.Controls.Add(this.InsertNameLabel);
             this.InsertGroupBox.Controls.Add(this.InsertNameTextButton);
             this.InsertGroupBox.Controls.Add(this.InsertSurnameLabel);
+            this.InsertGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.747663F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.InsertGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
             this.InsertGroupBox.Location = new System.Drawing.Point(382, 265);
             this.InsertGroupBox.Name = "InsertGroupBox";
             this.InsertGroupBox.Size = new System.Drawing.Size(258, 247);
@@ -170,7 +199,7 @@
             // 
             this.InsertCriminalIdTextBox.Location = new System.Drawing.Point(127, 169);
             this.InsertCriminalIdTextBox.Name = "InsertCriminalIdTextBox";
-            this.InsertCriminalIdTextBox.Size = new System.Drawing.Size(100, 20);
+            this.InsertCriminalIdTextBox.Size = new System.Drawing.Size(100, 22);
             this.InsertCriminalIdTextBox.TabIndex = 9;
             // 
             // InsertCriminalIdLabel
@@ -186,7 +215,7 @@
             // 
             this.InsertSurnameTextBox.Location = new System.Drawing.Point(127, 102);
             this.InsertSurnameTextBox.Name = "InsertSurnameTextBox";
-            this.InsertSurnameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.InsertSurnameTextBox.Size = new System.Drawing.Size(100, 22);
             this.InsertSurnameTextBox.TabIndex = 8;
             // 
             // InsertNameLabel
@@ -202,7 +231,7 @@
             // 
             this.InsertNameTextButton.Location = new System.Drawing.Point(127, 39);
             this.InsertNameTextButton.Name = "InsertNameTextButton";
-            this.InsertNameTextButton.Size = new System.Drawing.Size(100, 20);
+            this.InsertNameTextButton.Size = new System.Drawing.Size(100, 22);
             this.InsertNameTextButton.TabIndex = 7;
             // 
             // InsertSurnameLabel
@@ -219,6 +248,8 @@
             this.DeleteGroupBox.Controls.Add(this.DeleteButton);
             this.DeleteGroupBox.Controls.Add(this.DeleteIdTextBox);
             this.DeleteGroupBox.Controls.Add(this.DeleteIDLabel);
+            this.DeleteGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.747663F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DeleteGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
             this.DeleteGroupBox.Location = new System.Drawing.Point(382, 518);
             this.DeleteGroupBox.Name = "DeleteGroupBox";
             this.DeleteGroupBox.Size = new System.Drawing.Size(258, 96);
@@ -238,23 +269,43 @@
             // 
             // DeleteIdTextBox
             // 
-            this.DeleteIdTextBox.Location = new System.Drawing.Point(127, 30);
+            this.DeleteIdTextBox.Location = new System.Drawing.Point(133, 31);
             this.DeleteIdTextBox.Name = "DeleteIdTextBox";
-            this.DeleteIdTextBox.Size = new System.Drawing.Size(100, 20);
+            this.DeleteIdTextBox.Size = new System.Drawing.Size(100, 22);
             this.DeleteIdTextBox.TabIndex = 11;
             // 
             // DeleteIDLabel
             // 
             this.DeleteIDLabel.Location = new System.Drawing.Point(6, 30);
             this.DeleteIDLabel.Name = "DeleteIDLabel";
-            this.DeleteIDLabel.Size = new System.Drawing.Size(100, 23);
+            this.DeleteIDLabel.Size = new System.Drawing.Size(121, 23);
             this.DeleteIDLabel.TabIndex = 11;
             this.DeleteIDLabel.Text = "Insert Agent\'s ID ";
             this.DeleteIDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CriminalsUndercoverdataGridView
             // 
+            this.CriminalsUndercoverdataGridView.BackgroundColor = System.Drawing.Color.DarkGreen;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.728972F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkGreen;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CriminalsUndercoverdataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.CriminalsUndercoverdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.728972F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkGreen;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CriminalsUndercoverdataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+            this.CriminalsUndercoverdataGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CriminalsUndercoverdataGridView.Location = new System.Drawing.Point(646, 12);
             this.CriminalsUndercoverdataGridView.Name = "CriminalsUndercoverdataGridView";
             this.CriminalsUndercoverdataGridView.RowHeadersWidth = 46;
@@ -265,6 +316,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(985, 621);
             this.Controls.Add(this.CriminalsUndercoverdataGridView);
             this.Controls.Add(this.DeleteGroupBox);
