@@ -1,0 +1,25 @@
+This program is simulating simple FBI database.
+
+Using entity framework, and code first rule
+I created database with 5 tables:
+
+		>FBIagentsList 
+			-it is simply table with data of normal FBI agents	
+			-contains Foreign Key to table FBIagentsTypes
+
+		>FBIagentsTypes
+			-table contains information about types of agents
+
+		>FBIcriminalsList
+			-table contains FBI data about criminals
+			-contains Foreign Key to table FBIcriminalsType
+		
+		>FBIcriminalsTypes 
+			-table contains infromation about types of criminals
+
+		>FBIundercoverAgents
+			-table contains list of agents who are udercover criminals
+			-contains foreign key to table FBIcriminalsList
+
+Whole data base has made in .NET Graphic IDE, personally i think it's look quite nice
+though it is quite simple.
