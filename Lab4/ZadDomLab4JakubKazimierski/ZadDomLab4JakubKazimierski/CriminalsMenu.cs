@@ -14,8 +14,12 @@ namespace ZadDomLab4JakubKazimierski
 {
     public partial class CriminalsMenu : Form
     {
+        //initialization of interface criminals
         private readonly IFBIgeneric<FBIcriminalsList> _criminals;
 
+        /// <summary>
+        /// constructor
+        /// </summary>
         public CriminalsMenu()
         {
             InitializeComponent();
@@ -25,20 +29,29 @@ namespace ZadDomLab4JakubKazimierski
             LoadCriminals();
         }
 
+        //load data from database to grid view
         private void LoadCriminals()
         {
             CriminalsGridView.DataSource = _criminals.GetAll();
         }
 
+        /// <summary>
+        /// event method of insert button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void InsertButton_Click(object sender, EventArgs e)
         {
+            //assertion of text boxes
             if (InsertNameTextButton.Text != "" && InsertSurnameTextBox.Text != "" && InsertRankTextBox.Text != "" && InsertBirthTextBox.Text != "")
             {
+                //variables needed to insert new criminal 
                 var criminalFirstName = InsertNameTextButton.Text;
                 var criminalLastName = InsertSurnameTextBox.Text;
                 var criminalBirthdate = InsertBirthTextBox.Text;
                 var TypeId = InsertRankTextBox.Text;
 
+                //new object
                 FBIcriminalsList newCriminal = new FBIcriminalsList()
                 {
                     FirstName = criminalFirstName,
@@ -47,6 +60,7 @@ namespace ZadDomLab4JakubKazimierski
                     CriminalTypeId = Int32.Parse(TypeId)
                 };
 
+                //add new element to data base
                 _criminals.Create(newCriminal);
                 _criminals.Save();
 
@@ -57,48 +71,75 @@ namespace ZadDomLab4JakubKazimierski
                 MessageBox.Show("Insert All Data");
             }
 
+            //clear text boxes
             InsertNameTextButton.Text = "";
             InsertSurnameTextBox.Text = "";
             InsertRankTextBox.Text = "";
             InsertBirthTextBox.Text = "";
         }
 
+        /// <summary>
+        /// event method of update button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UpdateButton_Click(object sender, EventArgs e)
         {
+            //assertion of text boxes
             if (CriminalIdTextBox.Text != "" && NameTextBox.Text != "" && SurnameTextBox.Text != "" && RankTextBox.Text != "")
             {
+                //variables needed to update criminal
                 var criminalId = Int32.Parse(CriminalIdTextBox.Text);
                 var updateCriminal = _criminals.GetById(criminalId);
 
-                updateCriminal.FirstName = NameTextBox.Text;
-                updateCriminal.LastName = SurnameTextBox.Text;
-                updateCriminal.CriminalTypeId = Int32.Parse(RankTextBox.Text);
+                //assertion of non existing key
+                if (updateCriminal != null)
+                {
+                    updateCriminal.FirstName = NameTextBox.Text;
+                    updateCriminal.LastName = SurnameTextBox.Text;
+                    updateCriminal.CriminalTypeId = Int32.Parse(RankTextBox.Text);
 
-                _criminals.Update(updateCriminal);
-                _criminals.Save();
+                    //add criminal to data base
+                    _criminals.Update(updateCriminal);
+                    _criminals.Save();
 
-                LoadCriminals();
+                    LoadCriminals();
+                }
+                else
+                {
+                    MessageBox.Show("Insert proper ID");
+                }
             }
             else
             {
                 MessageBox.Show("Insert All Data");
             }
+
+            //clear text boxes
             CriminalIdTextBox.Text = "";
             NameTextBox.Text = "";
             SurnameTextBox.Text = "";
             RankTextBox.Text = "";
         }
 
+        /// <summary>
+        /// event method of delete button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DeleteButton_Click(object sender, EventArgs e)
         {
+            //assertion of text box
             if (DeleteIdTextBox.Text != "")
             {
+                //variables needed to delete criminal
                 var selectedCriminalIndex = Int32.Parse(DeleteIdTextBox.Text);
                 var deleteCriminal = _criminals.GetById(selectedCriminalIndex);
 
+                //asssertion of index
                 if (deleteCriminal != null)
                 {
-
+                    //delete criminal
                     _criminals.DeleteById(deleteCriminal.Id);
                     _criminals.Save();
 
@@ -115,6 +156,7 @@ namespace ZadDomLab4JakubKazimierski
             {
                 MessageBox.Show("Insert ID");
             }
+            //clear text box
             DeleteIdTextBox.Text = "";
         }
     }
